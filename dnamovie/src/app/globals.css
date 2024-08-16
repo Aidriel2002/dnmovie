@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(17, 17, 17);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+h2 {
+  text-align: center;
+  color: #fff;
+  margin: 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#sec1 {
+  margin: 0 auto;
+}
+#sec1 img {
+  margin: 20px auto;
+  width: 300px;
+  height: 400px;
+  border-radius: 5px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+  transition: 0.5s ease;
+}
+#sec1 img:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: 0.5s ease;
+}
+#sec1 .genre {
+  color: rgb(161, 161, 161);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.genre p {
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: rgb(62, 62, 62);
+}
+.desc {
+  color: #fff;
+  margin: 10px auto;
+  text-align: center;
+  width: 40%;
+}
+
+button {
+  background-color: rgb(4, 53, 14);
+  padding: 10px 25px;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: red;
+}
+#sec2 {
+  height: 100vh;
+}
+
+#sec2 h1 {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-left: 50px;
+}
+.bttn {
+  display: flex;
+  justify-content: center;
+}
+
+#sec2 .img-cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#sec2 img {
+  width: 250px;
+  height: 350px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.imgs h3 {
+  color: #fff;
+  font-weight: bold;
+}
+.imgs p {
+  color: #a7a7a7;
+}
+
+footer {
+  text-align: center;
+  background-color: #767676;
+}
